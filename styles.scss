@@ -18,11 +18,6 @@ body {
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #81D8D0 150%);
 }
 
-.table-contact-desktop {
-  width: 100%;
-  text-align: left;
-  
-}
 
 .container {
   display: grid;
@@ -174,8 +169,16 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #81D8D0 150%);
 .table-details {
     width: 100%;
     height: 100%;
-    margin-top: 100px;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
 
+    .table-contact-desktop {
+      text-align: left;
+      border-collapse: separate;
+      border-spacing: 12px 8px;
+    }
     .table-contact-mobile {
       display: none;     
     }
@@ -193,5 +196,12 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #81D8D0 150%);
         font-weight: 600;
       }
     }
+
+}
+
+.header2 {
+text-align: center;
+margin: 36px 0;
+
 
 }
